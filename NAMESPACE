@@ -1,0 +1,110 @@
+export(
+	loadRda,
+	loadData,
+	fitConnectivity,
+	makeSingleTrialEvents,
+	differenceCor,
+	roiConnectivity,
+	setFuncTimings,
+	loadFunc,
+	saveFunc,
+	makeROImask,
+	createRegs,
+	setRegFiles,
+	setRegParams,
+	euclidDist,
+	makeLowResStruct,	
+	makeLowResStructAvg,
+	getModelAtlas,
+	loadReg,
+	saveReg,
+	makeDerivs,
+	readDerivs,
+	varcov,
+	BIC,
+	RMSEA,
+	wald,
+	mcpCorrect,
+	makeExpDirs,
+	getExp,
+	loadExp,
+	fitModel,
+	createAverages,
+	createAllAverages,
+	determineStartRect,
+	determineStartRectSimple,
+	setIsoContour,
+	processModel,
+	processSeed,
+	fitRange,
+	minBIC,
+	arfversion,
+	newModel,
+	saveModel,
+	saveModelBin,
+	saveModelBinSimple,
+	loadOptions,
+	saveOptions,
+	loadStart,
+	saveStart,
+	loadModel,
+	clearWarnings,
+	checkSolution,
+	showModels,
+	readData,
+	writeData,
+	fmri2array
+)
+
+exportPattern("^[\\.]")
+
+exportClasses(
+	version,
+	settings,
+	experiment,
+	registration,
+	functional,
+	options,
+	nifti.fileinfo,
+	nifti.header,
+	fmri.data,
+	data,
+	model,
+	sequence,
+	wald,
+	mnames
+)
+
+exportMethods(
+	show,
+	plot,
+	summary
+)
+
+import(
+	corpcor,
+	tcltk,
+	methods,
+	graphics
+)
+
+useDynLib(
+	arf3DS4,
+	gauss,
+	ssqgauss,
+	ssqdata,
+	dfssq,
+	dfgauss,
+	simplegauss,
+	simplessqgauss,
+	dfsimplegauss,
+	dfsimplessq,
+	innerSWfull,
+	innerSWdiag,
+	innerSWfast,
+	innerSWbw,
+	innerSWbwfast,
+	approxHessian,
+	dfgaussFile,
+	simTS
+)
